@@ -8,7 +8,7 @@ def injuries(timestamp):
     reddit = praw.Reddit(client_id="",
                          client_secret="",
                          password="",
-                         user_agent="testscript",
+                         user_agent="",
                          username="")
 
     widgets = reddit.subreddit("lcfc").widgets

@@ -19,7 +19,7 @@ def topscorers(update_time):
     page = requests.get(url)
     source_string = "[Source](" + url + ")"
 
-    soup = Bs(page.content, "html5lib")
+    soup = Bs(page.content, "lxml")
     results = soup.find(id='div_stats_standard_10728')
 
     block = results.find_all('tbody')

@@ -11,5 +11,6 @@ if __name__ == '__main__':
     print("updating top scorers")
     updatetopscorers.topscorers(timestamp)
     print("updating league table")
-
     league_table_generator.GetLeagueTableData(timestamp)
+    print("updating injuries")
+    updateinjuries.injuries(timestamp)
